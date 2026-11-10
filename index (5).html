@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="半畝方糖：從帝國製糖廠看見城市中的慢活微旅行。行銷二甲影展專題首頁。">
+    <title>首頁——半畝方糖影展專題</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        /* Thêm thuộc tính cuộn mượt mà khi ấn vào mục lục */
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif; line-height: 1.7; color: #4A3B32; background-color: #FDFBF7; }
+        .wrapper { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; }
+        .site-header { background-color: #5D4037; color: #FFFFFF; padding: 2.5rem 2rem; border-radius: 8px 8px 0 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .site-header h1 { font-size: 2.1rem; margin-bottom: 0.5rem; font-weight: 700; }
+        .site-header p { font-size: 1.05rem; opacity: 0.9; }
+        .nav-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; background-color: #EFEBE9; padding: 10px; border-radius: 0 0 8px 8px; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .nav-buttons a { background-color: #FFFFFF; color: #5D4037; text-decoration: none; text-align: center; padding: 0.8rem 0.5rem; border-radius: 6px; font-size: 0.95rem; font-weight: 600; border: 1px solid #D7CCC8; transition: 0.2s; }
+        .nav-buttons a:hover, .nav-buttons a.active { background-color: #8D6E63; color: #FFFFFF; border-color: #8D6E63; }
+        .grid-container { display: grid; grid-template-columns: 2.8fr 1.2fr; gap: 1.5rem; }
+        .main-content { background: #FFFFFF; padding: 2.2rem; border-radius: 8px; border: 1px solid #EFEBE9; box-shadow: 0 4px 15px rgba(141,110,99,0.05); }
+        section { margin-bottom: 2.2rem; padding-bottom: 1.5rem; border-bottom: 2px dashed #F5F2EF; }
+        section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        section h2 { color: #5D4037; font-size: 1.35rem; background: #F5F2EF; border-left: 4px solid #8D6E63; padding: 0.5rem 0.9rem; border-radius: 0 6px 6px 0; margin-bottom: 1rem; }
+        section p { color: #5C4B43; margin-bottom: 1rem; text-align: justify; }
+        .summary-card { background-color: #FDFBF7; border: 1px solid #EFEBE9; padding: 1.2rem; border-radius: 6px; margin-bottom: 1.5rem; }
+        .summary-card h3 { color: #8D6E63; font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .summary-card ul { padding-left: 1.2rem; font-size: 0.92rem; color: #5D4037; }
+        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+        .widget { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; border: 1px solid #EFEBE9; box-shadow: 0 4px 15px rgba(141,110,99,0.05); }
+        .widget h3 { color: #5D4037; font-size: 1.1rem; margin-bottom: 0.8rem; border-bottom: 2px solid #F5F2EF; padding-bottom: 0.4rem; border-left: 3px solid #8D6E63; padding-left: 0.5rem; }
+        /* Style cho mục lục có gạch chân và hiệu ứng bấm */
+        .widget ul { padding-left: 1.2rem; font-size: 0.9rem; color: #5C4B43; }
+        .widget li { margin-bottom: 0.6rem; }
+        .widget li a { color: #8D6E63; text-decoration: underline; font-weight: 500; transition: color 0.2s; }
+        .widget li a:hover { color: #5D4037; }
+        .widget p { font-size: 0.9rem; color: #5C4B43; margin-bottom: 0.4rem; }
+        .site-footer { text-align: center; padding: 1.8rem; background-color: #3E2723; color: #EFEBE9; font-size: 0.85rem; margin-top: 2.5rem; border-radius: 8px; }
+        @media (max-width: 768px) { .grid-container { grid-template-columns: 1fr; } .nav-buttons { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="site-header">
+            <h1>半畝方糖</h1>
+            <p>帝國製糖廠影展專題 · 放慢步調，糖廠剛好。</p>
+        </header>
+
+        <nav class="nav-buttons">
+            <a href="index.html" class="active">首頁</a>
+            <a href="story.html">糖廠介紹與地點</a>
+            <a href="film.html">影展短片</a>
+            <a href="team.html">製作團隊</a>
+        </nav>
+
+        <div class="grid-container">
+            <main class="main-content">
+                <!-- Tóm tắt tổng quan -->
+                <div class="summary-card" id="tong-quan">
+                    <h3>📌 本站架構與內容總覽</h3>
+                    <ul>
+                        <li><strong>首頁：</strong> 痛點觀察、解方提案與網站總覽。</li>
+                        <li><strong>糖廠介紹與地點：</strong> 帝國製糖廠歷史美學、星泉湖自然景點與參觀資訊。</li>
+                        <li><strong>影展短片：</strong> 故事大綱、短片播放、宣傳目標與企劃摘要。</li>
+                        <li><strong>製作團隊：</strong> 組員分工明細與專案職責。</li>
+                    </ul>
+                </div>
+
+                <!-- section có ID khớp với thẻ a trong mục lục -->
+                <section id="pain-point">
+                    <h2>痛點觀察：被 3C 綁架的世代</h2>
+                    <p>在無限 deadline 與社群訊息的夾縫中，當代青年經常陷入無意識的數位疲勞。我們的專題聚焦於臺中市區的地標——<strong>帝國製糖廠臺中營業所</strong>，探討如何透過短短兩小時的低成本微旅行，替疲憊的大腦重開機。</p>
+                    </section>
+
+                <section id="solution">
+                    <h2>解方提案：微慢活的心靈避難所</h2>
+                    <p>休閒不該只有消費主義下的商場與影城。本影展專題以「半畝方糖」為核心概念，倡導利用零碎時間進行心靈充電，讓感官從冰冷的螢幕中暫時解脫出來。</p>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>本頁目錄</h3>
+                    <ul>
+                        <li><a href="#tong-quan">內容總覽</a></li>
+                        <li><a href="#pain-point">痛點觀察</a></li>
+                        <li><a href="#solution">解方提案</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>參觀資訊</h3>
+                    <p><strong>地址：</strong>臺中市東區樂業路30號]</p>
+                    <p><strong>停留時間：</strong>1～2 小時</p>
+                    <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.8;">作者：HW06_D1496708_阮娥媚</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <p>逢甲大學 行銷學系 二甲 | D1496708 阮娥媚</p>
+        </footer>
+    </div>
+</body>
+</html>

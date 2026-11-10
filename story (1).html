@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="帝國製糖廠介紹與參觀地點資訊。">
+    <title>糖廠介紹與地點——半畝方糖影展專題</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif; line-height: 1.7; color: #4A3B32; background-color: #FDFBF7; }
+        .wrapper { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; }
+        .site-header { background-color: #5D4037; color: #FFFFFF; padding: 2.5rem 2rem; border-radius: 8px 8px 0 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .site-header h1 { font-size: 2.1rem; margin-bottom: 0.5rem; font-weight: 700; }
+        .site-header p { font-size: 1.05rem; opacity: 0.9; }
+        .nav-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; background-color: #EFEBE9; padding: 10px; border-radius: 0 0 8px 8px; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .nav-buttons a { background-color: #FFFFFF; color: #5D4037; text-decoration: none; text-align: center; padding: 0.8rem 0.5rem; border-radius: 6px; font-size: 0.95rem; font-weight: 600; border: 1px solid #D7CCC8; transition: 0.2s; }
+        .nav-buttons a:hover, .nav-buttons a.active { background-color: #8D6E63; color: #FFFFFF; border-color: #8D6E63; }
+        .grid-container { display: grid; grid-template-columns: 2.8fr 1.2fr; gap: 1.5rem; }
+        .main-content { background: #FFFFFF; padding: 2.2rem; border-radius: 8px; border: 1px solid #EFEBE9; box-shadow: 0 4px 15px rgba(141,110,99,0.05); }
+        section { margin-bottom: 2.2rem; padding-bottom: 1.5rem; border-bottom: 2px dashed #F5F2EF; }
+        section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        section h2 { color: #5D4037; font-size: 1.35rem; background: #F5F2EF; border-left: 4px solid #8D6E63; padding: 0.5rem 0.9rem; border-radius: 0 6px 6px 0; margin-bottom: 1rem; }
+        section p { color: #5C4B43; margin-bottom: 1rem; text-align: justify; }
+        .map-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #eee; border-radius: 6px; margin: 1rem 0; border: 1px solid #EFEBE9; }
+        .map-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .map-link { display: inline-block; margin-top: 0.5rem; color: #8D6E63; text-decoration: underline; font-weight: 500; font-size: 0.95rem; }
+        .map-link:hover { color: #5D4037; }
+        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+        .widget { background: #FFFFFF; padding: 1.5rem; border-radius: 8px; border: 1px solid #EFEBE9; box-shadow: 0 4px 15px rgba(141,110,99,0.05); }
+        .widget h3 { color: #5D4037; font-size: 1.1rem; margin-bottom: 0.8rem; border-bottom: 2px solid #F5F2EF; padding-bottom: 0.4rem; border-left: 3px solid #8D6E63; padding-left: 0.5rem; }
+        .widget ul { padding-left: 1.2rem; font-size: 0.9rem; color: #5C4B43; }
+        .widget li { margin-bottom: 0.6rem; }
+        .widget li a { color: #8D6E63; text-decoration: underline; font-weight: 500; transition: color 0.2s; }
+        .widget li a:hover { color: #5D4037; }
+        .widget p { font-size: 0.9rem; color: #5C4B43; margin-bottom: 0.4rem; }
+        .site-footer { text-align: center; padding: 1.8rem; background-color: #3E2723; color: #EFEBE9; font-size: 0.85rem; margin-top: 2.5rem; border-radius: 8px; }
+        @media (max-width: 768px) { .grid-container { grid-template-columns: 1fr; } .nav-buttons { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="site-header">
+            <h1>半畝方糖</h1>
+            <p>帝國製糖廠影展專題 · 放慢步調，糖廠剛好。</p>
+        </header>
+
+        <nav class="nav-buttons">
+            <a href="index.html">首頁</a>
+            <a href="story.html" class="active">糖廠介紹與地點</a>
+            <a href="film.html">影展短片</a>
+            <a href="team.html">製作團隊</a>
+        </nav>
+
+        <div class="grid-container">
+            <main class="main-content">
+                <section id="sec-intro">
+                    <h2>帝國製糖廠簡介</h2>
+                    <p>創建於 1935 年（昭和10年）的帝國製糖廠臺中營業所，見證了日治時期至今中臺灣製糖產業的歷史演進。建築採和洋折衷風格，保留了經典鋼筋混凝土結構與紅磚面，展現工業遺產美學。</p>
+                </section>
+
+                <section id="sec-lake">
+                    <h2>生態水岸與星泉湖</h2>
+                    <p>轉化自舊沉澱池的星泉湖，營造出市區少見的開闊水岸景觀，與周邊 LaLaport 商圈形成強烈新舊對比，提供大眾自然休憩去處。</p>
+                </section>
+
+                <section id="sec-map">
+                    <h2>地圖與交通位置</h2>
+                    <p>帝國製糖廠臺中營業所坐落於臺中市東區樂業路30號，緊鄰 LaLaport 臺中購物中心。</p>
+                    <div class="map-box">
+                        <!-- Tọa độ chính xác cực kỳ khít với vị trí Đế quốc chế đường xưởng (Đài Trung) -->
+                        <iframe src="https://maps.google.com/maps?q=帝國製糖廠臺中營業所&t=&z=17&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/3Y9J6uJ4L3R2Y19N7" target="_blank" class="map-link">開啟 Google Maps (在新分頁中檢視)</a>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>本頁目錄</h3>
+                    <ul>
+                        <li><a href="#sec-intro">糖廠簡介</a></li>
+                        <li><a href="#sec-lake">星泉湖景點</a></li>
+                        <li><a href="#sec-map">地圖與交通位置</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>參觀資訊</h3>
+                    <p><strong>地址：</strong>臺中市東區樂業路30號</p>
+                    <p><strong>停留時間：</strong>1～2 小時</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <p>逢甲大學 行銷學系 二甲 | D1496708 阮娥媚</p>
+        </footer>
+    </div>
+</body>
+</html>
